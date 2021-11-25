@@ -14,6 +14,11 @@ body{
     padding:0 5%;
 }
 
+.section-title{
+    text-align: center;
+    font-size: xx-large;
+    padding: 3rem 0;
+}
 
 /*Header Section*/
 
@@ -52,18 +57,7 @@ body{
     float: left;    
 }
 
-
 /*Best Selling Section*/
-
-#best-selling{
-    
-}
-
-.best-selling-title{
-    text-align: center;
-    font-size: xx-large;
-    padding: 3rem 0;
-}
 
 .carousel-inner{
     padding: 0 5%;
@@ -81,9 +75,7 @@ body{
 }
 
 
-
-
-
+/*Course Categories Section*/
 
 #course-categories{
     background-color: #eee;
@@ -92,12 +84,6 @@ body{
 
 #course-categories .row{
     margin-bottom: 72px;
-}
-
-.course-categories-title{
-    text-align: center;
-    font-size: xx-large;
-    padding: 3rem 0;
 }
 
 .category-card{
@@ -121,6 +107,8 @@ body{
     text-decoration: none;
     color:inherit;
 }
+
+/*Footer Section*/
 
 footer{
     height: 200px;
