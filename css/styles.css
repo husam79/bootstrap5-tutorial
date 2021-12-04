@@ -74,6 +74,13 @@ body{
     height: 12rem;
 }
 
+.product-title{
+    height: 4rem;    
+}
+
+.product-text{
+    height: 6rem;
+}
 
 /*Course Categories Section*/
 
