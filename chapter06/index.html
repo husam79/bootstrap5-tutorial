@@ -24,8 +24,9 @@
 </head>
 
 <body>
-  
-  <div class="modal fade" id="addToCartConfirmation" tabindex="-1" aria-labelledby="addToCartConfirmation" aria-hidden="true">
+
+  <div class="modal fade" id="addToCartConfirmation" tabindex="-1" aria-labelledby="addToCartConfirmation"
+    aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -37,7 +38,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
-          <button type="button" class="btn btn-primary" onclick="gotoCart">الذهاب إلى السلة</button>
+          <button type="button" class="btn btn-primary" onclick="window.location='shopping-cart.html'">الذهاب إلى السلة</button>
         </div>
       </div>
     </div>
@@ -61,12 +62,12 @@
           </ul>
           <form class="d-flex me-auto w-100">
             <input class="form-control" type="search" placeholder="ابحث عن أي موضوع">
-            <div class="nav-link" style="position: relative;">
+            <div class="nav-link" style="position: relative;" onclick="goToShoppingCart()">
               <div class="counter zero"></div>
 
-              <img src="images/icons8-shopping-cart-32.png" />
+              <a href="shopping-cart.html"><img src="images/icons8-shopping-cart-32.png" /></a> 
             </div>
-            
+
             <button type="button" class="btn btn-dark nabih-buttons">دخول</button>
             <button type="button" class="btn btn-outline-dark nabih-buttons">تسجيل جديد</button>
           </form>
@@ -97,49 +98,57 @@
           <div class="row">
 
             <div class="col-lg-3">
-              <div class="card">
+              <div class="card" name="productCard" id="P1">
                 <img src="images/python-product.jpg" class="card-img-top product-image" alt="python-course">
                 <div class="card-body">
                   <h5 class="product-title card-title">دورة أساسيات البرمجة باستخدام بايثون</h5>
                   <p class="product-text card-text">في هذه الدورة سنتعلّم مبادئ البرمجة في لغة بايثون</p>
-                  <a href="#" id="1" name="addToCart" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addToCartConfirmation">أضف إلى السلة</a>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addToCartConfirmation">أضف
+                    إلى السلة</a>
+                  <div class="price-tag">$10</div>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-3">
-              <div class="card">
+              <div class="card" name="productCard" id="P2">
                 <img src="images/github-product.jpg" class="card-img-top product-image" alt="github-course">
                 <div class="card-body">
                   <h5 class="product-title card-title">دورة التعامل مع GitHub</h5>
                   <p class="product-text card-text">تعلّم كيف تدير مشاريعك البرمجية من حيث إدارة الإصدار والمساهة في
                     مشاريع برمجية
                     أخرى.</p>
-                  <a href="#" id="2" name="addToCart" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addToCartConfirmation">أضف إلى السلة</a>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addToCartConfirmation">أضف
+                    إلى السلة</a>
+                  <div class="price-tag">$15</div>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-3">
-              <div class="card">
+              <div class="card" name="productCard" id="P3">
                 <img src="images/python-django-product.jpg" class="card-img-top product-image" alt="django-course">
                 <div class="card-body">
                   <h5 class="product-title card-title">دورة تطوير تطبيقات ويب باستخدام بايثون مع Django</h5>
                   <p class="product-text card-text">تعلّم كيف تبني تطبيقات ويب باستخدام لغة بايثون مع Django </p>
-                  <a href="#" id="3" name="addToCart" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addToCartConfirmation">أضف إلى السلة</a>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addToCartConfirmation">أضف
+                    إلى السلة</a>
+                  <div class="price-tag">$20</div>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-3">
-              <div class="card">
+              <div class="card" name="productCard" id="P4">
                 <img src="images/javascript-product.jpg" class="card-img-top product-image" alt="javascript-course">
                 <div class="card-body">
                   <h5 class="product-title card-title">دورة أساسيات البرمجة باستخدام جافاسكريبت</h5>
                   <p class="product-text card-text"> سنتعلّم في هذه الدورة كيفية تطوير تطبيقات الواجهة الأمامية باستخدام
                     جافاسكريبت
                   </p>
-                  <a href="#" id="4" name="addToCart" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addToCartConfirmation">أضف إلى السلة</a>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addToCartConfirmation">أضف
+                    إلى السلة</a>
+                  <div class="price-tag">$25</div>
                 </div>
               </div>
             </div>
@@ -149,23 +158,27 @@
         <div class="carousel-item">
           <div class="row">
             <div class="col-lg-3">
-              <div class="card product-card">
+              <div class="card" name="productCard" id="P5">
                 <img src="images/php-product.jpg" class="card-img-top product-image" alt="php-course">
                 <div class="card-body">
                   <h5 class="product-title card-title">دورة أساسيات البرمجة باستخدام PHP</h5>
                   <p class="product-text card-text">في هذه الدورة سنتعلّم مبادئ البرمجة في لغة PHP</p>
-                  <a href="#" id="5" name="addToCart" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addToCartConfirmation">أضف إلى السلة</a>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addToCartConfirmation">أضف
+                    إلى السلة</a>
+                  <div class="price-tag">$13</div>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-3">
-              <div class="card">
+              <div class="card" name="productCard" id="P6">
                 <img src="images/arduino-product.jpg" class="card-img-top product-image" alt="arduino-course">
                 <div class="card-body">
                   <h5 class="product-title card-title">دورة التعامل مع أساسيات Arduino</h5>
                   <p class="product-text card-text">تعلّم كيف تبني أنظمة مضمنه تتضمّن مشاريع بسيطة باستخدام Arduino</p>
-                  <a href="#" id="6" name="addToCart" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addToCartConfirmation">أضف إلى السلة</a>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addToCartConfirmation">أضف
+                    إلى السلة</a>
+                  <div class="price-tag">$30</div>
                 </div>
               </div>
             </div>
@@ -274,7 +287,25 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
-  <script src="js/main.js"></script>
+  <script type="module">
+    import {updateCartLabel, saveItem} from './js/main.js';
+
+    let products = document.getElementsByName('productCard');
+
+    for (let product of products) {
+      const product_id = product.attributes['id'].value;
+      const product_title = product.getElementsByClassName('product-title')[0].innerHTML;
+      const product_price = product.getElementsByClassName('price-tag')[0].innerHTML;
+      const addToCartButton = product.getElementsByClassName('btn-primary')[0];
+
+      addToCartButton.addEventListener('click', (e) => {
+        const item_to_post = { id: product_id, course_name: product_title, price: product_price.substring(1) };
+        saveItem(item_to_post);
+        updateCartLabel();
+      });
+    }
+  </script>
+
 </body>
 
 </html>
