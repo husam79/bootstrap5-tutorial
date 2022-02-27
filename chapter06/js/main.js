@@ -68,11 +68,12 @@ export function updateShoppingCartList(){
 
 export function updateCartLabel(){
     const counterElement = document.getElementsByClassName('counter')[0];
+    let count = 0;
 
-    if(window.localStorage.length > 0){
-        counterElement.innerHTML = window.localStorage.length; // items_in_cart_counter;
+    count = getAllItems().reduce( (acc, group) => acc + group.length, 0)
+
+    if(count > 0){
+        counterElement.innerHTML = count;
         counterElement.classList.remove('zero');
     }
 }
-
-
