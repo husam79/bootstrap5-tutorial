@@ -1,0 +1,178 @@
+body{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1em;
+}
+
+.nabih-buttons{
+    margin: 0 4px; 
+    padding: 6px 8px;
+    width: 7rem;
+    white-space: nowrap; 
+}
+
+.container-fluid{
+    padding:0 5%;
+}
+
+.section-title{
+    text-align: center;
+    font-size: xx-large;
+    padding: 3rem 0;
+}
+
+/*Header Section*/
+
+.counter{
+    color: white;
+    margin: 0;
+    position: absolute;
+    font-size: 15px;
+    text-align: center;
+    right: 6px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+}
+
+.zero{
+    opacity: 0;
+}
+
+#header{
+    background-color: #eee;
+}
+
+.navbar-brand{
+    font-family: 'Almarai';
+    color:#393e46;
+    font-size: 2.5rem;
+    font-weight:900;
+    margin: 0;
+}
+
+.mainview-heading {
+    color: white;
+    font-size: 4em;
+    text-align: right;
+}
+
+.mainview-subheading{
+    color: white;
+    margin: 64px 0;
+    text-align: right;
+}
+
+.mainview{
+    background-color: #233e8b;
+    padding: 3% 5%;
+}
+
+.mainview-image{
+    border-radius: 2%;
+    width: 500px;
+    float: left;    
+}
+
+/*Best Selling Section*/
+
+.carousel-inner{
+    padding: 0 5%;
+}
+.carousel-control-prev {
+    background: linear-gradient(to right, rgba(200,200,200,0), rgba(200,200,200,1));
+}
+
+.carousel-control-next {
+    background: linear-gradient(to left, rgba(200,200,200,0), rgba(200,200,200,1));
+}
+
+.product-image{
+    height: 12rem;
+}
+
+.product-title{
+    height: 4rem;    
+}
+
+.product-text{
+    height: 6rem;
+}
+
+.price-tag{
+    float: left; 
+    border-width: 1px; 
+    border-style: solid; 
+    width: 3rem; height: 2rem;
+    text-align: center;
+    padding:2px;
+    margin-top:2px;
+}
+
+/*Course Categories Section*/
+
+#course-categories{
+    background-color: #eee;
+    padding: 0 10% 8px;
+}
+
+#course-categories .row{
+    margin-bottom: 72px;
+}
+
+.category-card{
+    margin-left: 24px;
+    margin-right:24px;
+    padding: 48px 0px 32px;
+}
+
+.category-image{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.category-text{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.category-link{
+    text-decoration: none;
+    color:inherit;
+}
+
+/*Footer Section*/
+
+footer{
+    height: 200px;
+}
+
+.social-icon {
+    margin: 20px 10px;
+  }
+
+#footer .container-fluid{
+    padding: 7% 15%;
+    text-align: center;
+}
+
+/*Shopping Cart*/
+.shopping-cart-title{
+    padding: 3% 5%;
+}
+.shopping-cart-content{
+    padding: 0 5%;
+}
+
+.shopping-cart-total{
+    padding:0 5% 3%;
+    font-weight: bold;
+}
+
+.shopping-cart-item{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 1.1rem;
+}
